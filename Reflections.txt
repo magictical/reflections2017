@@ -1,0 +1,48 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	기억은 잘안나는데 아마 텍스트위에 체크표 같은게 있었을거임
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+	이전에 무엇을 했는지 기억 못할때 그리고 그때 무엇을 집중적으로 보고 
+	어떤로직을 바꾸었는지 기록해 놓는다면 언제든지 그때로 돌아가서 다시
+	살펴 볼 수 있기 때문에 매우 효과적이라고 생각됨
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+	장점 : 매뉴얼 커밋은 사용자 정의에 따라 커밋 시점을 나눌 수 있기 때문에
+	특정 변화가 있을때 커밋을 나누어 주면 나중에 커밋에서 이루어진 변화를 구분하기가 
+	편하다.
+
+	단점 : 너무 많거나 너무 작은 변경점에서 커밋이 이루어 질 경우 이 또한 각각의 
+	커밋에 대한 변경점을 파악하기 힘들다. 즉 일관성있게 논리적 변경점이 있을 경우
+	커밋을 해서 해당 단점을 커버해야한다.
+
+		
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+	보통 코딩할 경우는 하나의 파일이 다른파일과 연결되어서 서로 상호작용을 
+	하게된다. 그래서 특정 커밋이 이루어진 상태의 변경된 파일과 연결된 모든
+	파일들의 상태를 함께 저장해 놓는것이 중요하다.
+
+How can you use the commands git log and git diff to view the history of files?
+	git log의 경우에는 내가 혹은 다른사람이 이전에 작업한 코딩의 변화가 어떻게
+	이루어졌고 어떤특징들이 있는지 큰 그림으로 봤을때 파악하기 용이하다.
+
+	git dii [id] [id]의 경우는 어떤 변경점이 있었는지 상세하게 파악할때 용이 하다.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	언제든 지정했던 commit시점으로 돌아올 수 있으니 좀 더 과감한 시도가 
+	가능할 것 같다. 부담없이 새 코드를 짜보고 아닌것 같으면 돌아오는 식
+	그리고 버그잡는 것도 상대적으로 쉬울것 같다.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+	뭐하긴 앱만들때 써야지..

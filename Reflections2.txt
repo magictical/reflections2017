@@ -1,0 +1,15 @@
+What happens when you initialize a repository? Why do you need to do it?
+	.git폴더가 생성됨 이폴더의 git repository로 이제 부터 git이 관리할 commit을 베이스로	한 파일들이 관리될거임
+	
+	이제부터 Working Directory/staging area/Repository를 구분할거임
+	
+	git init을 해야 원하는 폴더의 파일들을 git으로 관리 할 수 있음(초기화는 꼭해야됨)
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	실제로 존재하는 working-directory 그리고 git의해서 관리되는 repository의 중간단계
+	현재 변경된 파일을 repository에 등록 하기전의 단계를 담당함
+
+	staging Area는 지나치게 빈번하게 commit을 하거나 의미없는 commit을 할 경우를 줄여
+	줄 수 있을것 같다. 일단 중간 단계에서 commit될 파일을 등록하거나 지울 수 있어서
+	commit이 너무 많아져서 사용자가 구분하기 힘들어지는 경우가 생기는것도 막을 수 있을것 	같다.
