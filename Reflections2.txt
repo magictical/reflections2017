@@ -13,3 +13,10 @@ How is the staging area different from the working directory and the repository?
 	staging Area는 지나치게 빈번하게 commit을 하거나 의미없는 commit을 할 경우를 줄여
 	줄 수 있을것 같다. 일단 중간 단계에서 commit될 파일을 등록하거나 지울 수 있어서
 	commit이 너무 많아져서 사용자가 구분하기 힘들어지는 경우가 생기는것도 막을 수 있을것 	같다.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+	가장 최근의 commit과 현재 Staging Area의 상태를 비교하려면 git diff --staged 명령어
+	를 사용하면된다. 만약 결과가 1개 이상의 파일이 staging Area에 들어있다고 표시하면
+	commit에서 제외할 파일은 git reset [fileName]으로 Staging Area에서 제외할 수 있다.
+	
